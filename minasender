@@ -1,17 +1,8 @@
 #!/bin/bash
-MINA_LIST_ADDRESS=./mina_Users_address.txt
-if [[ -f "$MINA_LIST_ADDRESS" ]]; then
-    echo ""
-else
-    echo "Downloading Mina Address List"
-    sleep 5
-    wget "https://raw.githubusercontent.com/AkiAfroo/minasender/main/mina_Users_address.txt"
-fi
-clear
-read -p "Amount you want to send: " mina_amount
-read -p "Amount of fee you want to paid: " mina_fee
+read -p "请输入想要发送的mina数量: " mina_amount
+read -p "请输入想要使用的网络费用: " mina_fee
 mkdir -p minasenderlogs
-echo lets unlock your wallet! $CODA_PUBLIC_KEY
+echo 解锁你的账户! $CODA_PUBLIC_KEY
 coda account unlock -public-key $CODA_PUBLIC_KEY
 
 IFS=$'\n';for MINA_ADDRESS in `cat mina_Users_address.txt`; do
