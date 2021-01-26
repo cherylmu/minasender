@@ -2,8 +2,8 @@
 
 
 # minasender
-一个可以批量转账mina的脚本 ( https://github.com/MinaProtocol/mina )。
-脚本的输入变量?:
+一个可以批量转账mina的脚本 (https://github.com/MinaProtocol/mina) 
+脚本的输入变量:
 
 - [x] -发送的mina数量
 
