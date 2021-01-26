@@ -2,29 +2,27 @@
 
 
 # minasender
-![logo](https://i.postimg.cc/26qDJK34/Mina-Protocol-Sender.png)
-一个 ( https://github.com/MinaProtocol/mina ) in Bulk from a LIST of ADDRESS.
-the script ask for
+一个可以批量转账mina的脚本 ( https://github.com/MinaProtocol/mina )。
+脚本的输入变量?:
 
-- [x] -the amount to send
+- [x] -发送的mina数量
 
-- [x] -the fee to pay
+- [x] -转账费用
 
-- [x] -password for unlock your wallet to send those transactions.
+- [x] -解锁账户的密码
 
-- [x] -added 20 testnet addresses
+- [x] -20个测试网的账户地址
 
-- [x] -added extra .txt with 1544 testworld address, (carefull you can drain your balance if you set high fees.)
-
-dont forget: you must have a full node synced with all the environment variable ready and setting up in ~/.bashrc or ~/.profile
-
+注意: 请在 ~/.bashrc 或者 ~/.profile 中填写以下配置
+```
 export CODA_PUBLIC_KEY=your-Mina-Address
 
 export MINA_PUBLIC_KEY=your-Mina-Address-same-as-above
-
-## usage:
-* `wget https://raw.githubusercontent.com/AkiAfroo/minasender/main/minasender`
-* `chmod +x minasender`
-* `bash minasender`
-
-# minasender and mina_Users_address.txt must be in the same directory
+```
+# 使用方法:
+```
+git clone https://github.com/cherylmu/minasender.git
+cd minasender/
+chmod +x minasender
+bash minasender
+```
