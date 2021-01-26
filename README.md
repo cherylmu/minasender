@@ -15,9 +15,9 @@
 
 注意: 请在 ~/.bashrc 或者 ~/.profile 中填写以下配置
 ```
-export CODA_PUBLIC_KEY=your-Mina-Address
+export CODA_PUBLIC_KEY=你的mina地址
 
-export MINA_PUBLIC_KEY=your-Mina-Address-same-as-above
+export MINA_PUBLIC_KEY=你的mina地址
 ```
 # 使用方法:
 ```
